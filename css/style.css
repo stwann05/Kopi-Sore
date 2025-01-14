@@ -1,0 +1,477 @@
+:root {
+  --primary: #876052;
+  --secondary: #211814;
+  --text: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* index.html */
+.main {
+  background-image: url(../assets/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.header {
+  width: 100%;
+  height: auto;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.container {
+  width: 70%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.container h1 {
+  color: var(--text);
+  font-family: "PlayfairDisplay";
+  font-weight: 500;
+}
+
+.container img {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.hero {
+  align-items: baseline;
+  align-content: center;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  margin: 70px auto 0 0;
+}
+
+.container-hero {
+  display: inline-block;
+  width: 50%;
+  margin-top: 30px;
+}
+
+.container-hero h1 {
+  font-family: "PlayfairDisplay";
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.container-hero p {
+  font-family: "Roboto";
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+button {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 200;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  background: linear-gradient(rgba(5, 4, 4, 1), rgba(135, 96, 82, 0.9) 40%);
+  color: var(--text);
+}
+
+.main {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.header {
+  animation: slideIn 1.2s ease-in-out;
+}
+.container h1 {
+  animation: fadeIn 1.5s ease-in-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+.container img {
+  animation: fadeIn 2s ease-in-out;
+  animation-delay: 0.7s;
+  animation-fill-mode: both;
+}
+
+.hero {
+  animation: slideIn 1.8s ease-in-out;
+  animation-delay: 0.6s;
+  animation-fill-mode: both;
+}
+
+button {
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  animation: buttonHover 0.6s ease-in-out;
+}
+
+/* About Styles */
+.about-bg {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, #211814, #876052);
+}
+
+/* Navigation Styles */
+.home-next div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.home-next div a {
+  color: var(--text);
+  margin: 0 30px 0 30px;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease-in-out;
+}
+
+.home-next div a:hover {
+  color: #000000;
+}
+
+.home-next div a span {
+  font-size: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.home-next div a span:hover {
+  transform: scale(1.2);
+}
+
+/* Main Content Styles */
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.about-main {
+  width: 50%;
+  color: var(--text);
+  line-height: 1.8;
+  margin-top: 30px;
+  background: transparent;
+  animation: fadeIn 1s ease-out;
+}
+
+.about-main h2 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-family: "PlayfairDisplay";
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: slideInLeft 1s ease-out;
+}
+
+.about-main p {
+  font-size: 1rem;
+  font-weight: 200;
+  font-style: italic;
+  font-family: "Roboto";
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.aside {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aside img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  animation: zoomIn 1.2s ease-out;
+  transition: transform 0.3s ease-in-out;
+  width: 300px;
+  height: 400px;
+}
+
+.aside img:hover {
+  transform: scale(1.05);
+}
+/* menu style */
+.next-back div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.next-back div a {
+  color: #000000;
+  margin: 0 30px;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease-in-out;
+}
+
+.next-back div a span {
+  font-size: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.next-back div a span:hover {
+  transform: scale(1.2);
+}
+
+.menu-content {
+  display: flex;
+  justify-content: space-around; /* Align left and right items */
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 20px;
+  width: 90%;
+}
+
+.menu-content .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-content .left img {
+  border-radius: 20px;
+  opacity: 0; /* Initially hidden for fade-in effect */
+  transform: scale(0.9); /* Start scaled down */
+  animation: fadeInZoomIn 1s forwards; /* Apply the fade-in zoom-in animation */
+  width: 300px;
+  height: 350px;
+}
+
+.menu-content .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 80px;
+  margin-left: 0px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 50%;
+  opacity: 0;
+  animation: fadeInSlideIn 1s forwards;
+}
+
+.menu-content .right h3 {
+  font-size: 24px;
+  font-family: "PlayfairDisplay";
+  font-weight: 600;
+  color: #000000;
+}
+
+.menu-content .right p {
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.7;
+  color: #666;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Keyframe */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes buttonHover {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInZoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+@keyframes fadeInSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 762px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .container-hero h1 {
+    font-family: "PlayfairDisplay";
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .container-hero p {
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 1.5;
+  }
+  button {
+    width: 80px;
+    height: 37px;
+    border-radius: 10px;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .aside img {
+    width: 500px;
+    height: 200px;
+    margin-top: 20px;
+  }
+  .about-main {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-main h2 {
+    font-size: 1rem;
+  }
+
+  .about-main p {
+    font: 0.8rem;
+  }
+
+  .menu-content {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .menu-content .left img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .menu-content .right {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .menu-content .right h3 {
+    font-size: 10px;
+  }
+
+  .menu-content .right p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 432px) {
+  .container-hero h1 {
+    font-family: "PlayfairDisplay";
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .container-hero p {
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 1.5;
+  }
+}
